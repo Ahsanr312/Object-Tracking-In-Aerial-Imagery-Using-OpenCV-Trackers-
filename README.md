@@ -23,3 +23,6 @@ This repository will cover in detail the problems that occured during the instal
 - Flash the Jetson TX2
 
 ##### Step 04 Summary Finalization
+
+
+#### 2. NVIDIA JETSON JETPACK:
