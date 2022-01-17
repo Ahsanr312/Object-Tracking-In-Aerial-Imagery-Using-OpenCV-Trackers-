@@ -27,7 +27,3 @@ This repository will cover in detail the problems that occured during the instal
 
 #### 2. Building OpenCV and OpenCV Contrib:
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
