@@ -1,4 +1,16 @@
-#### JetPack 4.6
+##JetPack 4.6##
+1. Jetson OS image 32.6
+2. CUDA Toolkit for L4T 10.2
+3. CUDA-X AI: 
+  a. cuDNN on Target 8.2
+  b. TensorRT on Target 8.0
+4. Computer Vision: 
+  a. OpenCV on Target 4.1.1
+  b. VisionWorks on Target 1.6
+  c. VPI on Target
+5. NVIDIA Container Runtime with Docker Integration 0.1
+6. Multimedia API 32.6
+7. NVIDIA Nsight Systems 2021.2
 
 
 OpenCV
