@@ -112,3 +112,42 @@ make -j4
 sudo make install
 ```
 
+#### ISSUES  
+##### While building OpenCV issues occur, some due to pre-requisite libraries versions and other randomly. Below mentioned are some of the issues that I had while buidling OpenCV 3.4.2.
+
+```
+1. While installing "libjasper-dev, libpng12-dev" they are often missing from the apt get repositries. Since these packages are not compulsory, you can skip installing them.
+```
+
+```
+2. *** No rule to make target '/usr/lib/aarch64-linux-gnu/libGL.so', needed by...
+This issue arsises when you run the make command to build openCV. The problem is, the
+file required lies in the path "/usr/lib/aarch64-linux-gnu/", however to make it 
+available to the build process, a symbolic link needs to be created for that.
+
+Steps to resolve this issue:
+cd /usr/lib/aarch64-linux-gnu/
+sudo rm libGL.so
+sudo ln -sf libGL.so.1.0 libGL.so
+
+In case the issue persists, try repeating the above steps but changing the libGL.so.1.0
+to libGL.so.1 or libGL.so.1.0.0
+```
+
+```
+3. While installing matplotlib using pip3, there are often issues encountered.
+Googling the issues suggest to upgrade the setuptools, however the issues persists.
+In order to resolve this issue, try installing matplotlib using apt-get method as:
+
+$ sudo apt-get install matplotlib
+```
+
+```
+4. "error Please include the appropriate gl headers before including cuda_gl_interop.h"
+
+sudo vim /usr/local/cuda/include/cuda_gl_interop.h
+cd /usr/lib/aarch64-linux-gnu/
+sudo ln -sf tegra/libGL.so libGL.so
+
+```
+
