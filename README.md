@@ -82,4 +82,33 @@ $ sudo pip2 install matplotlib
 ```
 $ sudo vim /usr/local/lib/python2.7/dist-packages/matplotlib/mpl-data/matplotlibrc
 ```
--
+- In this repository I will be using OpenCV 3.4.2, so downloading and using 3.4.2 in my steps
+```
+cd ~/Downloads  
+wget https://github.com/opencv/opencv/archive/3.4.2.zip
+unzip 3.4.2.zip 
+mv opencv-3.4.2 ~/
+cd ~/opencv-3.4.2
+mkdir build
+cd ~/Downloads
+rm 3.4.2.zip
+wget https://github.com/opencv/opencv_contrib/archive/3.4.2.zip
+unzip 3.4.2.zip
+mv opencv_contrib-3.4.2 ~/
+cd ~/opencv-3.4.2/build
+```
+- Run the following cmake commands in the build directory:
+```
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local \
+      -D WITH_CUDA=ON -D CUDA_ARCH_BIN="6.2" -D CUDA_ARCH_PTX="" \
+      -D WITH_CUBLAS=ON -D ENABLE_FAST_MATH=ON -D CUDA_FAST_MATH=ON \
+      -D ENABLE_NEON=ON -D WITH_LIBV4L=ON -D BUILD_TESTS=OFF \
+      -D BUILD_PERF_TESTS=OFF -D BUILD_EXAMPLES=OFF \
+      -D WITH_QT=ON -D WITH_OPENGL=ON \       
+      -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.4.2/modules ..
+```
+```
+make -j4
+sudo make install
+```
+
