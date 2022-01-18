@@ -22,7 +22,7 @@ This repository will cover in detail the problems that occured during the instal
 ##### Step 03 Setup Process
 - Flash the Jetson TX2
 
-### 2. Building OpenCV and OpenCV Contrib:
+### 2. Building OpenCV, OpenCV Contrib and Installing necessary pre-requisite libraries:
 Installing OpenCV on Jetson is different than installing it on a normal UBUNTU system. Jetson has arm architecture, and the wheels for packages such as OpenCV has to be built rather than pip installation. Before buidling OpenCV with CUDA, make sure that CUDA is installed properly.
 - Open terminal and write the following command to check CUDA installation with its version. 
 ```
@@ -70,5 +70,16 @@ $ sudo pip3 install matplotlib
 ```
 - Modify matplotlibrc (line #41) as 'backend      : TkAgg'
 ```
-$ sudo vim /usr/local/lib/python3.5/dist-packages/matplotlib/mpl-data/matplotlibrc
+$ sudo vim /usr/local/lib/python3.6/dist-packages/matplotlib/mpl-data/matplotlibrc
 ```
+- Also install dependencies for python2
+```
+$ sudo apt-get install python-dev python-pip python-tk
+$ sudo pip2 install numpy
+$ sudo pip2 install matplotlib
+```
+- Modify matplotlibrc (line #41) as 'backend      : TkAgg'
+```
+$ sudo vim /usr/local/lib/python2.7/dist-packages/matplotlib/mpl-data/matplotlibrc
+```
+-
