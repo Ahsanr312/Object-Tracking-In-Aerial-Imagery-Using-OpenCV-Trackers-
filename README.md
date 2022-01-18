@@ -116,7 +116,8 @@ sudo make install
 ##### While building OpenCV issues occur, some due to pre-requisite libraries versions and other randomly. Below mentioned are some of the issues that I had while buidling OpenCV 3.4.2.
 
 ```
-1. While installing "libjasper-dev, libpng12-dev" they are often missing from the apt get repositries. Since these packages are not compulsory, you can skip installing them.
+1. While installing "libjasper-dev, libpng12-dev" they are often missing from the apt get repositries. 
+Since these packages are not compulsory, you can skip installing them.
 ```
 
 ```
