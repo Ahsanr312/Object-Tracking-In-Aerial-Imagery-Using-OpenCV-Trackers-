@@ -28,3 +28,47 @@ Installing OpenCV on Jetson is different than installing it on a normal UBUNTU s
 ```
 nvcc --version
 ```
+- Remove all old opencv stuffs installed by JetPack (or OpenCV4Tegra)
+```
+$ sudo apt-get purge libopencv*
+```
+- It's prefered using newer version of numpy (installed with pip), so remove this python-numpy apt package as well
+```
+$ sudo apt-get purge python-numpy
+```
+- Upgrade all installed apt packages to the latest versions (optional)
+```
+$ sudo apt-get update
+$ sudo apt-get dist-upgrade
+```
+- Update gcc apt package to the latest version (highly recommended)
+```
+$ sudo apt-get install --only-upgrade g++-5 cpp-5 gcc-5
+```
+- Install dependencies based on the Jetson Installing OpenCV Guide
+```
+$ sudo apt-get install build-essential make cmake cmake-curses-gui \
+                       g++ libavformat-dev libavutil-dev \
+                       libswscale-dev libv4l-dev libeigen3-dev \
+                       libglew-dev libgtk2.0-dev
+```
+- Install dependencies for gstreamer stuffs
+```
+$ sudo apt-get install libdc1394-22-dev libxine2-dev \
+                       libgstreamer1.0-dev \
+                       libgstreamer-plugins-base1.0-dev
+```
+- Install Qt5 dependencies
+```
+$ sudo apt-get install qt5-default
+```
+- Install dependencies for python3
+```
+$ sudo apt-get install python3-dev python3-pip python3-tk
+$ sudo pip3 install numpy
+$ sudo pip3 install matplotlib
+```
+- Modify matplotlibrc (line #41) as 'backend      : TkAgg'
+```
+$ sudo vim /usr/local/lib/python3.5/dist-packages/matplotlib/mpl-data/matplotlibrc
+```
