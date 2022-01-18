@@ -5,7 +5,7 @@ This repository will cover in detail the problems that occured during the instal
 
 ### INSTALLATION PROCEDURE
 
-#### 1. NVIDIA JETSON JETPACK:
+### 1. NVIDIA JETSON JETPACK:
 
 ##### Step 01 Development Environment
 - Download NVIDIA JETSON SDK MANAGER : https://developer.nvidia.com/nvidia-sdk-manager
@@ -22,5 +22,5 @@ This repository will cover in detail the problems that occured during the instal
 ##### Step 03 Setup Process
 - Flash the Jetson TX2
 
-#### 2. Building OpenCV and OpenCV Contrib:
+### 2. Building OpenCV and OpenCV Contrib:
 
