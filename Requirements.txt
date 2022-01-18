@@ -13,4 +13,6 @@
 7. NVIDIA Nsight Systems 2021.2
 
 
-OpenCV
+8. OpenCV 3.4.2
+9. OpenCV_contrib 3.4.2
+10. Other pre-requisite libraries for and with OpenCV
