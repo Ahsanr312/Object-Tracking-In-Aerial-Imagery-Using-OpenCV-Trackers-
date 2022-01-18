@@ -22,8 +22,5 @@ This repository will cover in detail the problems that occured during the instal
 ##### Step 03 Setup Process
 - Flash the Jetson TX2
 
-##### Step 04 Summary Finalization
-
-
 #### 2. Building OpenCV and OpenCV Contrib:
 
