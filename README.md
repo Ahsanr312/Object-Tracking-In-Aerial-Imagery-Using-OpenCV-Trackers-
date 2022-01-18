@@ -24,5 +24,4 @@ This repository will cover in detail the problems that occured during the instal
 
 ### 2. Building OpenCV and OpenCV Contrib:
 - Installing OpenCV on Jetson is different than installing it on a normal UBUNTU system. The reason is, Jetson has arm architecture, and the wheels for packages like OpenCV has to be built from source, rather than normal pip installing it. Before buidling OpenCV with CUDA, make sure that CUDA is installed properly using the following command in terminal. 
-
-nvcc --version
+  nvcc --version
