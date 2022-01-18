@@ -152,3 +152,9 @@ sudo ln -sf tegra/libGL.so libGL.so
 
 ```
 
+### CREDIT: 
+#### https://medium.com/@talhafarooq4/setting-up-jetson-tx1-tx2-for-onboard-processing-with-opencv-3-and-opencv-contrib-module-and-e078a5fa275b
+
+#### https://jkjung-avt.github.io/opencv3-on-tx2/
+
+#### https://www.programmersought.com/article/21734648181/
