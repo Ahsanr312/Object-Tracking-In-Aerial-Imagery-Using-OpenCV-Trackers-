@@ -1,1 +1,2 @@
-
+These two are the videos, I have been using as evaluation of the trackers. 
+Both have different variations, one being recorded at night and other at day.
