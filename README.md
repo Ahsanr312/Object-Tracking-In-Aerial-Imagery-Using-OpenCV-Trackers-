@@ -183,7 +183,7 @@ Dimension 1280x720
 Video FPS: 30
 ```
 
-| Trackers  | Avg. FPS w.r.t target box size | Resources |
+| Trackers  | Avg. FPS w.r.t target box size /n Size | Resources |
 | -------- | ------------- | ----------- |
 | CSRT  | Content Cell  | Content Cell  |
 | KCF  | Content Cell  | Content Cell  |
