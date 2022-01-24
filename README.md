@@ -155,6 +155,7 @@ sudo ln -sf tegra/libGL.so libGL.so
 ### USEAGE
 ```
 1. Clone the repository:
+
 git clone https://github.com/Ahsanr312/Object-Tracking-In-Aerial-Imagery-Using-OpenCV-Trackers-.git
 ```
 
@@ -164,6 +165,7 @@ git clone https://github.com/Ahsanr312/Object-Tracking-In-Aerial-Imagery-Using-O
 
 ```
 3. Open terminal and run the command below:
+
 python opencv_object_tracking.py --video ./Videos/Car_Chase1.mp4 --tracker csrt
 ```
 
@@ -181,3 +183,5 @@ python opencv_object_tracking.py --video ./Videos/Car_Chase1.mp4 --tracker csrt
 #### https://jkjung-avt.github.io/opencv3-on-tx2/
 
 #### https://www.programmersought.com/article/21734648181/
+
+#### https://www.pyimagesearch.com/2018/07/30/opencv-object-tracking/
