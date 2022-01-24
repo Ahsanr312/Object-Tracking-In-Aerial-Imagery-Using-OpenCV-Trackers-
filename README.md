@@ -185,9 +185,7 @@ Video FPS: 30
 
 | Trackers  | Avg. FPS w.r.t target box size | Resources |
 | -------- | ---------------- | -------- |
-|       | Box Size (W,H)| FPS |               |
-| CSRT  |    Content Cell |  Content Cell |
-|       |                 |               |
+| CSRT  | (40,20) --> 10.5 | 170-200 % |
 | KCF  | Content Cell  | Content Cell  |
 
 
