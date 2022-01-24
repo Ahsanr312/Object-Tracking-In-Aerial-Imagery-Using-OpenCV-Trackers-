@@ -152,6 +152,29 @@ sudo ln -sf tegra/libGL.so libGL.so
 
 ```
 
+### USEAGE
+```
+1. Clone the repository:
+git clone https://github.com/Ahsanr312/Object-Tracking-In-Aerial-Imagery-Using-OpenCV-Trackers-.git
+```
+
+```
+2. Place your videos in the Videos folder on which you want to track your target object.
+```
+
+```
+3. Open terminal and run the command below:
+python opencv_object_tracking.py --video ./Videos/Car_Chase1.mp4 --tracker csrt
+```
+
+```
+4. Arguments to use:
+
+--video     ---> Takes video path 
+--tracker   ---> Takes tracker that you want to use
+```
+
+
 ### CREDIT: 
 #### https://medium.com/@talhafarooq4/setting-up-jetson-tx1-tx2-for-onboard-processing-with-opencv-3-and-opencv-contrib-module-and-e078a5fa275b
 
