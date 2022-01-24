@@ -193,6 +193,20 @@ Video FPS: 30
 | KCF  | (W,H) - (145,90) --> 20 FPS | 120-160 % |
 
 
+```
+Video_2: Car_Chase2.mp4: 
+Dimension 1280x720
+Video FPS: 30
+```
+
+| Trackers  | Avg. FPS w.r.t target box size | Resources |
+| -------- | ---------------- | -------- |
+| CSRT  | (W,H) - (70,60) --> 9.5 FPS | 170-200 % |
+| CSRT  | (W,H) - (150,180) --> 8 FPS | 170-200 % |
+| CSRT  | (W,H) - (240,190) --> 6 FPS | 170-200 % |
+| KCF  | (W,H) - (50,70) --> 30 FPS | 120-160 % |
+| KCF  | (W,H) - (164,184) --> 11 FPS | 120-160 % |
+| KCF  | (W,H) - (230,190) --> 9 FPS | 120-160 % |
 
 
 ### CREDIT: 
