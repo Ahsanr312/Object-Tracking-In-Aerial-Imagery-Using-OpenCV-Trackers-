@@ -176,6 +176,21 @@ python opencv_object_tracking.py --video ./Videos/Car_Chase1.mp4 --tracker csrt
 --tracker   ---> Takes tracker that you want to use
 ```
 
+### RESULTS
+```
+Video_1: Car_Chase1.mp4: 
+Dimension 1280x720
+Video FPS: 30
+```
+
+| Trackers  | Avg. FPS w.r.t target box size | Resources |
+| -------- | ------------- | ----------- |
+| CSRT  | Content Cell  | Content Cell  |
+| KCF  | Content Cell  | Content Cell  |
+
+
+
+
 
 ### CREDIT: 
 #### https://medium.com/@talhafarooq4/setting-up-jetson-tx1-tx2-for-onboard-processing-with-opencv-3-and-opencv-contrib-module-and-e078a5fa275b
